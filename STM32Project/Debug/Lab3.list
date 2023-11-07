@@ -341,7 +341,7 @@ void fsm_automatic_run(){
  800032c:	2002      	movs	r0, #2
  800032e:	f000 fcbd 	bl	8000cac <turnonLight2>
 
-		if(timer_flag[0] == 1){
+		if (timer_flag[0] == 1){
  8000332:	4b7d      	ldr	r3, [pc, #500]	; (8000528 <fsm_automatic_run+0x264>)
  8000334:	681b      	ldr	r3, [r3, #0]
  8000336:	2b01      	cmp	r3, #1
@@ -380,7 +380,7 @@ void fsm_automatic_run(){
  8000372:	4618      	mov	r0, r3
  8000374:	f000 fbf2 	bl	8000b5c <updateClockBuffer>
 
-		if(sec2 <= 0){
+		if (sec2 <= 0){
  8000378:	4b6a      	ldr	r3, [pc, #424]	; (8000524 <fsm_automatic_run+0x260>)
  800037a:	681b      	ldr	r3, [r3, #0]
  800037c:	2b00      	cmp	r3, #0
@@ -395,7 +395,7 @@ void fsm_automatic_run(){
  800038a:	4a66      	ldr	r2, [pc, #408]	; (8000524 <fsm_automatic_run+0x260>)
  800038c:	6013      	str	r3, [r2, #0]
 		}
-		if(isButtonPressed(0) == 1){
+		if (isButtonPressed(0) == 1){
  800038e:	2000      	movs	r0, #0
  8000390:	f7ff fedc 	bl	800014c <isButtonPressed>
  8000394:	4603      	mov	r3, r0
@@ -422,7 +422,7 @@ void fsm_automatic_run(){
  80003b6:	2003      	movs	r0, #3
  80003b8:	f000 fc78 	bl	8000cac <turnonLight2>
 
-		if(timer_flag[0] == 1){
+		if (timer_flag[0] == 1){
  80003bc:	4b5a      	ldr	r3, [pc, #360]	; (8000528 <fsm_automatic_run+0x264>)
  80003be:	681b      	ldr	r3, [r3, #0]
  80003c0:	2b01      	cmp	r3, #1
@@ -461,7 +461,7 @@ void fsm_automatic_run(){
  80003fc:	4618      	mov	r0, r3
  80003fe:	f000 fbad 	bl	8000b5c <updateClockBuffer>
 
-		if(sec2 <= 0){
+		if (sec2 <= 0){
  8000402:	4b48      	ldr	r3, [pc, #288]	; (8000524 <fsm_automatic_run+0x260>)
  8000404:	681b      	ldr	r3, [r3, #0]
  8000406:	2b00      	cmp	r3, #0
@@ -491,7 +491,7 @@ void fsm_automatic_run(){
  8000428:	2001      	movs	r0, #1
  800042a:	f000 fc3f 	bl	8000cac <turnonLight2>
 
-		if(timer_flag[0] == 1){
+		if (timer_flag[0] == 1){
  800042e:	4b3e      	ldr	r3, [pc, #248]	; (8000528 <fsm_automatic_run+0x264>)
  8000430:	681b      	ldr	r3, [r3, #0]
  8000432:	2b01      	cmp	r3, #1
@@ -530,7 +530,7 @@ void fsm_automatic_run(){
  800046e:	4618      	mov	r0, r3
  8000470:	f000 fb74 	bl	8000b5c <updateClockBuffer>
 
-		if(sec1 <= 0){
+		if (sec1 <= 0){
  8000474:	4b29      	ldr	r3, [pc, #164]	; (800051c <fsm_automatic_run+0x258>)
  8000476:	681b      	ldr	r3, [r3, #0]
  8000478:	2b00      	cmp	r3, #0
@@ -555,7 +555,7 @@ void fsm_automatic_run(){
  8000492:	2001      	movs	r0, #1
  8000494:	f000 fc0a 	bl	8000cac <turnonLight2>
 
-		if(timer_flag[0] == 1){
+		if (timer_flag[0] == 1){
  8000498:	4b23      	ldr	r3, [pc, #140]	; (8000528 <fsm_automatic_run+0x264>)
  800049a:	681b      	ldr	r3, [r3, #0]
  800049c:	2b01      	cmp	r3, #1
@@ -594,7 +594,7 @@ void fsm_automatic_run(){
  80004d8:	4618      	mov	r0, r3
  80004da:	f000 fb3f 	bl	8000b5c <updateClockBuffer>
 
-		if(sec1 <= 0){
+		if (sec1 <= 0){
  80004de:	4b0f      	ldr	r3, [pc, #60]	; (800051c <fsm_automatic_run+0x258>)
  80004e0:	681b      	ldr	r3, [r3, #0]
  80004e2:	2b00      	cmp	r3, #0
@@ -632,7 +632,6 @@ void fsm_automatic_run(){
 		break;
  800050e:	bf00      	nop
 	}
-
 }
  8000510:	bf00      	nop
  8000512:	bd80      	pop	{r7, pc}
